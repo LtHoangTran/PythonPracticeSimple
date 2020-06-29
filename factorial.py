@@ -1,6 +1,6 @@
 import logging
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-logging.disable(logging.CRITICAL)
+logging.basicConfig(filename='MyProgramLog.txt',level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')  # send the log of debug to another text file, created in the same folder as the python script
+#logging.disable(logging.CRITICAL)      # delete the hastag at the beginning to deactivate the logging program
 
 logging.debug('Start of program')
 
